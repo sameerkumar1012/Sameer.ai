@@ -1,3 +1,4 @@
+from unittest import result
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from backend.database import Base, engine
@@ -29,7 +30,5 @@ def faq_search(question: str, db: Session = Depends(get_db)):
         }
 
     return {
-        "question": result.question,
-        "answer": result.answer,
-        "score": result.score
-    }
+    "markdown": result.answer
+}
