@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 
 API_URL = "http://backend:8000"
+
 st.set_page_config(
     page_title="PortfolioGPT",
     page_icon="🤖",
@@ -9,7 +10,6 @@ st.set_page_config(
 )
 
 st.title("🤖 Sameer.AI")
-
 st.write("Ask anything about Sameer.")
 
 question = st.text_input(
@@ -24,18 +24,18 @@ if st.button("Ask"):
         with st.spinner("Thinking..."):
 
             response = requests.get(
-                API_URL,
-                params={
-                    "question": question
-                }
+                f"{API_URL}/faq/search",
+                params={"question": question}
             )
 
-        if response.status_code == 200:
+            st.write("Status Code:", response.status_code)
+            st.write("Response Text:", response.text)
 
-            data = response.json()
+            if response.status_code == 200:
+                data = response.json()
+                st.write(data)
 
-            st.markdown(data["markdown"])
-
-        else:
-
-            st.error("Backend Error")
+                if "markdown" in data:
+                    st.markdown(data["markdown"])
+                else:
+                    st.error("No 'markdown' key returned by backend.")
