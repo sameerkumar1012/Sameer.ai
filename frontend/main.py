@@ -28,14 +28,8 @@ if st.button("Ask"):
                 params={"question": question}
             )
 
-            st.write("Status Code:", response.status_code)
-            st.write("Response Text:", response.text)
-
             if response.status_code == 200:
                 data = response.json()
-                st.write(data)
-
-                if "markdown" in data:
-                    st.markdown(data["markdown"])
-                else:
-                    st.error("No 'markdown' key returned by backend.")
+                st.markdown(data["markdown"])
+            else:
+                st.error("Something went wrong. Please try again.")
