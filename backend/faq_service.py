@@ -26,7 +26,7 @@ def search_faq(db: Session, question: str):
     if result is None:
         return None
 
-    if result.score >= 0.5:
+    if result.score >= 0.65:
         return result
 
     return None

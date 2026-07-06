@@ -9,7 +9,4 @@ def rag_pipeline(question: str):
 
     answer = generate_answer(question, chunks)
 
-    return {
-        "answer": answer,
-        "context": chunks
-    }
+    return answer
