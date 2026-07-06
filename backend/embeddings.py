@@ -1,10 +1,10 @@
 import json
 import boto3
-
+from backend.config import AWS_REGION, EMBEDDING_MODEL
 
 client = boto3.client(
     service_name="bedrock-runtime",
-    region_name="us-east-1"   # Change if you're using another region
+    region_name=AWS_REGION
 )
 
 
@@ -15,7 +15,7 @@ def get_embedding(text: str):
     }
 
     response = client.invoke_model(
-        modelId="amazon.titan-embed-text-v2:0",
+        modelId=EMBEDDING_MODEL,
         body=json.dumps(body)
     )
 

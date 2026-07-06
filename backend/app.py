@@ -5,6 +5,7 @@ from backend.database import Base, engine
 from backend.dependencies import get_db
 from backend import models
 from backend.faq_service import search_faq
+from backend.rag_service import rag_pipeline
 
 Base.metadata.create_all(bind=engine)
 
@@ -24,11 +25,14 @@ def faq_search(question: str, db: Session = Depends(get_db)):
 
     result = search_faq(db, question)
 
-    if result is None:
+    if result:
+
         return {
-            "message": "No matching FAQ found. Proceed to RAG."
+            "markdown": result.answer
         }
 
+    answer = rag_pipeline(question)
+
     return {
-    "markdown": result.answer
-}
+        "markdown": answer
+    }
