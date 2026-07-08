@@ -1,4 +1,3 @@
-# backend/security/exceptions.py
 
 from fastapi import Request
 from fastapi.responses import JSONResponse
