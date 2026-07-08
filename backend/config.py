@@ -34,7 +34,7 @@ DATABASE_URL = os.getenv(
 
 TOP_K = int(os.getenv("TOP_K", 3))
 
-FAQ_THRESHOLD = float(os.getenv("FAQ_THRESHOLD", 0.65))
+FAQ_THRESHOLD = float(os.getenv("FAQ_THRESHOLD", 0.4))
 
 # ------------------------
 # Vector Store

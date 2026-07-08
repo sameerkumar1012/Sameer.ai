@@ -120,3 +120,266 @@ VALUES ('How can I schedule an interview with Sameer?', 'schedule interview', '�
 
 INSERT INTO faq (question, normalized_question, answer)
 VALUES ('Is Sameer available for remote, hybrid, or onsite roles?', 'remote hybrid onsite', '📬 I''m actively looking for Software, Backend and AI Engineering opportunities. You can reach me via email (sameerkumar1012@gmail.com) or LinkedIn. Share the role and a few convenient time slots, and I''ll be happy to schedule a conversation.');
+
+-- ===========================================================
+-- HOBBIES
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'What are Sameer''s hobbies?',
+'hobbies sameer',
+'## 🚴 When I''m not coding...
+
+You''ll probably find me doing one of these:
+
+🏍️ **Bike Rides**
+> Nothing beats a long ride with good roads, good weather, and zero notifications.
+
+🥾 **Trekking**
+> Mountains > Meetings. I love exploring trails and chasing viewpoints.
+
+🏸 **Badminton**
+> My favorite way to convince myself cardio is actually fun.
+
+🏊 **Swimming**
+> One of the best ways I unwind after spending hours in front of a screen.
+
+💡 **Fun Fact:**
+Some of my best project ideas have come during long bike rides or while relaxing after a trek.'
+);
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'Tell me about Sameer''s hobbies.',
+'sameer hobbies',
+(SELECT answer FROM faq WHERE question='What are Sameer''s hobbies?')
+);
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'What does Sameer do outside coding?',
+'sameer hobbies outside coding',
+(SELECT answer FROM faq WHERE question='What are Sameer''s hobbies?')
+);
+
+
+
+-- ===========================================================
+-- WHAT CAN THIS AI DO
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'What can this AI do?',
+'ai capabilities',
+'## 🤖 What Can I Do?
+
+Think of me as **Sameer''s digital twin**.
+
+I can help you with:
+
+✅ Explain Sameer''s projects
+
+✅ Talk about his technical skills
+
+✅ Describe internship experiences
+
+✅ Answer questions about education and achievements
+
+✅ Explain the technologies used in his projects
+
+✅ Tell you about his hobbies and interests
+
+✅ Share contact information
+
+✅ Explain how this PortfolioGPT was built.
+
+⚡ Behind the scenes I use:
+
+📚 PostgreSQL FAQ Search
+
+🔎 FAISS Semantic Search
+
+🧠 Amazon Bedrock (Nova Lite)
+
+So I''m not just answering from memory—I retrieve relevant knowledge before generating responses.'
+);
+
+
+
+-- ===========================================================
+-- HOW DOES THIS AI WORK
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'How does this AI work?',
+'ai architecture',
+'## ⚙️ How Do I Work?
+
+Here''s my brain in simple terms:
+
+👤 You ask a question
+
+⬇️
+
+📚 PostgreSQL FAQ Search
+
+⬇️
+
+If no FAQ matches...
+
+🔎 FAISS Vector Search using Amazon Titan Embeddings
+
+⬇️
+
+🧠 Amazon Bedrock (Nova Lite)
+
+⬇️
+
+💬 Smart Response
+
+This hybrid architecture keeps common questions lightning fast while still answering completely new ones intelligently.'
+);
+
+
+
+-- ===========================================================
+-- PROJECT LIMITATIONS
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'What are the limitations of this project?',
+'project limitations',
+'## ⚠️ Every AI Has Limits
+
+Here''s where I might struggle:
+
+❌ I only know information that Sameer has added to my knowledge base.
+
+❌ I don''t browse the internet in real time.
+
+❌ I may occasionally misunderstand very vague questions.
+
+❌ I''m designed to answer questions about Sameer—not replace Google. 😄
+
+💡 If I don''t know something, I''d rather admit it than confidently make something up.'
+);
+
+
+
+-- ===========================================================
+-- WHY WAS THIS PROJECT BUILT
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'Why did Sameer build this project?',
+'project purpose',
+'## 💡 Why Was I Built?
+
+This isn''t just another portfolio website.
+
+Sameer wanted recruiters and engineers to **have a conversation** with his portfolio instead of reading static pages.
+
+While building me, he explored:
+
+🚀 FastAPI
+
+🗄️ PostgreSQL + pg_trgm
+
+🔎 FAISS
+
+🧠 Amazon Bedrock
+
+📦 Docker
+
+☁️ AWS
+
+🤖 Hybrid FAQ + RAG Architecture
+
+This project showcases practical AI engineering rather than just another chatbot demo.'
+);
+
+
+
+-- ===========================================================
+-- IS THIS CHATGPT
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'Is this ChatGPT?',
+'chatgpt',
+'## 😄 Am I ChatGPT?
+
+Not exactly!
+
+I''m a **custom AI assistant** built specifically for Sameer.
+
+Instead of knowing everything, I specialize in answering questions about:
+
+👨‍💻 Sameer
+
+🚀 His projects
+
+🧠 His skills
+
+💼 His experience
+
+🎯 His achievements
+
+Think of me as a portfolio that talks back.'
+);
+
+
+
+-- ===========================================================
+-- FAVORITE PROJECTS
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'Which project is Sameer most proud of?',
+'favorite projects',
+'## 🚀 My Favorite Projects
+
+Choosing just one is impossible 😅.
+
+Here are a few highlights:
+
+🤖 PortfolioGPT (Yes, that''s me!)
+
+📊 Insight Agent
+
+💼 AI Job Match
+
+📚 LeetCode Revision Assistant
+
+Each project solved a real-world problem while teaching me something new about building production-ready AI systems.'
+);
+
+
+
+-- ===========================================================
+-- WHY SHOULD WE HIRE SAMEER
+-- ===========================================================
+
+INSERT INTO faq (question, normalized_question, answer) VALUES (
+'Why should we hire Sameer?',
+'hire sameer',
+'## 🌟 Why Hire Sameer?
+
+Beyond technical skills, I enjoy building products that solve real problems.
+
+Here''s what I bring:
+
+🚀 Production-ready AI application development
+
+🤖 RAG, LLMs, LangChain, Agentic AI
+
+☁️ AWS Cloud & Bedrock
+
+⚡ FastAPI Backend Development
+
+📊 Data Analytics & Visualization
+
+🗄️ Databases & Vector Search
+
+💡 Most importantly, I love learning quickly, taking ownership, and turning ideas into working products.
+
+If you''ve made it this far, thanks for checking out my AI portfolio! 😊'
+);
