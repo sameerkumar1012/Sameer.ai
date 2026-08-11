@@ -17,11 +17,12 @@ Sameer Kumar is a Backend & AI Engineer passionate about building production-rea
 
 Sameer is open to interviews for relevant Software Engineering, Backend Engineering, AI Engineering, Data Engineering, and Machine Learning roles.
 
-To schedule an interview:
+To schedule an interview or a call:
 
-1. Contact Sameer via email or LinkedIn.
-2. Mention the company name and role
-3. Share a few available time slots.
+1. Use the booking page on Sameer's portfolio site, which shows live availability from his Google Calendar and confirms the meeting instantly with a Google Meet link.
+2. Alternatively, contact Sameer by email or LinkedIn, mentioning the company name and role.
+
+Meetings booked through the site are 60 minutes and scheduled in the Asia/Kolkata (IST) timezone.
 
 ## Current Status
 
