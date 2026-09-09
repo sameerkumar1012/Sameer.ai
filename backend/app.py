@@ -195,7 +195,7 @@ def chat(
     }
 
 
-@app.get("/faq/search")
+@app.get("/faq/search", dependencies=[Depends(require_secret)])
 def faq_search(
     question: str,
     db: Session = Depends(get_db),
