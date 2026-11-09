@@ -11,7 +11,7 @@ Dayananda Sagar College of Engineering, Bangalore
 
 ## About
 
-Sameer Kumar is a Backend & AI Engineer passionate about building production-ready AI applications, RAG systems, data engineering pipelines, and scalable backend services. He enjoys solving real-world problems using Python, FastAPI, AWS, and modern LLM technologies.
+Sameer Kumar is an AI Customer Success Associate passionate about building production-ready AI applications, RAG systems, data engineering pipelines, and scalable backend services. He enjoys solving real-world problems using Python, FastAPI, AWS, and modern LLM technologies.
 
 ## Interview Scheduling
 

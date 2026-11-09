@@ -2,19 +2,19 @@
 TRUNCATE TABLE faq RESTART IDENTITY;
 
 INSERT INTO faq (question, normalized_question, answer)
-VALUES ('Who is Sameer?', 'who sameer', '👋 Hi! I''m Sameer Kumar, a Backend & AI Engineer who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
+VALUES ('Who is Sameer?', 'who sameer', '👋 Hi! I''m Sameer Kumar, an AI Customer Success Associate who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
 
 INSERT INTO faq (question, normalized_question, answer)
-VALUES ('Tell me about Sameer.', 'tell sameer', '👋 Hi! I''m Sameer Kumar, a Backend & AI Engineer who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
+VALUES ('Tell me about Sameer.', 'tell sameer', '👋 Hi! I''m Sameer Kumar, an AI Customer Success Associate who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
 
 INSERT INTO faq (question, normalized_question, answer)
-VALUES ('Can you introduce Sameer?', 'introduce sameer', '👋 Hi! I''m Sameer Kumar, a Backend & AI Engineer who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
+VALUES ('Can you introduce Sameer?', 'introduce sameer', '👋 Hi! I''m Sameer Kumar, an AI Customer Success Associate who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
 
 INSERT INTO faq (question, normalized_question, answer)
-VALUES ('What is Sameer''s background?', 'sameer background', '👋 Hi! I''m Sameer Kumar, a Backend & AI Engineer who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
+VALUES ('What is Sameer''s background?', 'sameer background', '👋 Hi! I''m Sameer Kumar, an AI Customer Success Associate who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
 
 INSERT INTO faq (question, normalized_question, answer)
-VALUES ('What is Sameer currently doing?', 'sameer currently doing', '👋 Hi! I''m Sameer Kumar, a Backend & AI Engineer who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
+VALUES ('What is Sameer currently doing?', 'sameer currently doing', '👋 Hi! I''m Sameer Kumar, an AI Customer Success Associate who enjoys turning ideas into real products. Whether it''s AI agents, RAG systems, or cloud applications, I love building solutions that people actually use.');
 
 INSERT INTO faq (question, normalized_question, answer)
 VALUES ('What is Sameer''s educational background?', 'sameer education', '🎓 I graduated in Electronics & Telecommunication Engineering from Dayananda Sagar College of Engineering, Bangalore with a CGPA of 8.1/10. Most of my learning, however, came from building AI and backend projects beyond the classroom.');
